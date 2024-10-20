@@ -2,13 +2,15 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A brief description of your first project goes here.',
+    title: 'To do Web Application',
+    description: 'This simple Todo application, built with React, uses the Context API for state management and supports CRUD operations. It allows users to add, view, update, and delete tasks, with data persistence handled via the browser\'s local storage',
+    link:'https://todo-project-five-inky.vercel.app/',
     technologies: ['React', 'Tailwind CSS', 'JavaScript']
   },
   {
-    title: 'Project Two',
-    description: 'Details about the second project can be added here.',
+    title: 'Blog Web Application',
+    description: 'Developed a fully responsive blog web application using React and Redux Toolkit (RTK). The application features secure user authentication via Appwrite, enabling full blog CRUD (Create, Read, Update, Delete) operations. Implemented efficient form management with React Hook Form, dynamic navigation with React Router, and an aesthetically pleasing UI using Tailwind CSS and React Icons. Integrated interactive notifications via React Hot Toast and provided a rich text editing experience through TinyMCE-React.',
+    link:'https://bog-project.vercel.app/',
     technologies: ['Node.js', 'Express', 'MongoDB']
   },
   
@@ -26,6 +28,7 @@ const Projects = () => {
           <div key={index} className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
             <p className="mb-4">{project.description}</p>
+            <a className="mb-4 text-blue-600" href={project.link}>Click Here To Access The webApp</a>
             <div>
               <h3 className="font-semibold">Technologies Used:</h3>
               <ul className="flex gap-2">
